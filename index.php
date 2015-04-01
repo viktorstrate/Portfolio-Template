@@ -52,7 +52,16 @@
                 <div class="imageitem">
                     <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
                 </div>
-                
+                </div>
             </div>
-    </body>
+            
+            <footer>
+                <div id="footerInfo">
+                    Open-Source Portfolio Template
+                </div>
+                <div id="footerCopyright">
+                    Copyright (C) 2015
+                </div>
+            </footer>
+  </body>
 </html>
