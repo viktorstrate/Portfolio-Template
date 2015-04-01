@@ -11,38 +11,57 @@ body {
 
 header {
     background: transparent;
-    height: 50px;
+    height: 65px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     width: 100% !important;
+    margin-top: 10px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+
+header nav {
+    float: left;
 }
 
 .logo{
     width: 240px;
+    margin: auto;
+    font-size: 18px;
+    float: left;
 }
 
 .imageitem {
-    width: 240px;
-    height: 140px;
-    background-color: #000;
     float: left;
+}
+
+.imageitem img{
+    width: 240px;
+    height: 160px;
+    background-color: #000;
     margin-top: 10px;
-    margin-bottom: 10px;
     border: 1px none;
     border-radius: 3px;
+}
+
+.imageitem p{
+    margin: 0px;
+    text-align: center;
 }
 
 .content {
     margin: 0 auto;
     display: block;
     width: 240px;
-}
-.container {
-    width: 100%;
-    height: calc(100% - 230px);
+    margin-top: 100px;
 }
 
-h1 {
-    margin: 0;
+.container {
+    width: 100%;
+    height: calc(100% - 280px);
 }
 
 footer{
@@ -50,6 +69,22 @@ footer{
     display: block;
     width: 240px;
     height: 30px;
+}
+
+.logo {
+    padding-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+#header-content nav{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+#header-content{
+    margin: 0 auto;
 }
 
 #footerInfo {
@@ -73,7 +108,7 @@ footer{
         width: 520px;
     }
     
-    .logo{
+    #header-content{
         width: 520px;
     }
 }
@@ -88,6 +123,10 @@ footer{
     }
     
     footer{
+        width: 780px;
+    }
+    
+    #header-content{
         width: 780px;
     }
 }
@@ -105,7 +144,7 @@ footer{
         width: 1040px;
     }
     
-    .logo{
+    #header-content{
         width: 1040px;
     }
 }
