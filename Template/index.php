@@ -1,13 +1,12 @@
 <?php
 require_once("configuration.php");
-
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-        <title>Thumbs</title>
+        <title><?php region('Name') ?></title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='stylesheet.css' rel='stylesheet' type='text/css' >
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,39 +14,15 @@ require_once("configuration.php");
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="assets/scripts/itemhandler.js"></script>
+        <script src="assets/scripts/general.js"></script>
     </head>
     <body>
-    
-        <br>
-        
-        <header>
-        
-        <div class="header-content">
-            <h1 class="logo">Thumbs</h1>
-            
-            <nav>
-                <ul>
-                    <a href="index.php" class="current"><li>Work</li></a>
-                    <a href="about.php"><li>About</li></a>
-                    <a href="contact.php"><li>Contact</li></a>
-                </ul>
-            </nav>
-        </div>
-            
-        </header>
-        
+
+        <?php require_once('header.php'); ?>
         <div class="container">
             <div class="content" id="content">
             </div>
         </div>
-            
-            <footer>
-                <div class="footerInfo">
-                    Open-Source Portfolio Template
-                </div>
-                <div class="footerCopyright">
-                    Copyright &copy; 2015 Jonathan and Viktor
-                </div>
-            </footer>
+        <?php require_once('footer.php'); ?>
   </body>
 </html>

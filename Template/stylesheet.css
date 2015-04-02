@@ -13,7 +13,7 @@ header {
     background: transparent;
     height: 65px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    width: 100% !important;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -40,12 +40,19 @@ a {
 }
 
 .imageitem {
+    transition: 0.1s;
     float: left;
 }
 
+.imageitem:hover {
+    transition: 0.1s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
 .imageitem img{
-    width: 240px;
-    height: 160px;
     background-color: #000;
     margin-top: 10px;
     border: 1px none;
@@ -67,14 +74,23 @@ a {
 
 .container {
     width: 100%;
-    height: 800px;
 }
 
 footer{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#footer{
     margin: 0 auto;
     display: block;
     width: 240px;
     height: 30px;
+    
 }
 
 .logo {
@@ -110,7 +126,7 @@ footer{
         width: 520px;
     }
     
-    footer{
+    #footer{
         width: 520px;
     }
     
@@ -129,7 +145,7 @@ footer{
         width: 780px;
     }
     
-    footer{
+    #footer{
         width: 780px;
     }
     
@@ -147,7 +163,7 @@ footer{
         width: 1040px;
     }
     
-    footer{
+    #footer{
         width: 1040px;
     }
     
