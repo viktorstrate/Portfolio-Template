@@ -27,6 +27,10 @@ header nav {
     float: left;
 }
 
+a {
+    color: #333;
+}
+
 .logo{
     width: 240px;
     margin: auto;
@@ -42,6 +46,7 @@ header nav {
     width: 240px;
     height: 160px;
     background-color: #000;
+    background-size:cover;
     margin-top: 10px;
     border: 1px none;
     border-radius: 3px;
@@ -61,7 +66,7 @@ header nav {
 
 .container {
     width: 100%;
-    height: calc(100% - 280px);
+    height: 800px;
 }
 
 footer{
@@ -77,22 +82,22 @@ footer{
     float: left;
 }
 
-#header-content nav{
+.header-content nav{
     width: 50%;
     float: left;
     text-align: right;
 }
 
-#header-content{
+.header-content{
     margin: 0 auto;
 }
 
-#footerInfo {
-    float:left;
+.footerInfo {
+    float: left;
 }
 
-#footerCopyright{
-    float:right;
+.footerCopyright {
+    float: right;
 }
 
 @media only screen and (min-width: 530px) {
@@ -108,9 +113,10 @@ footer{
         width: 520px;
     }
     
-    #header-content{
+    .header-content{
         width: 520px;
     }
+    
 }
 
 @media only screen and (min-width: 790px) {
@@ -126,7 +132,7 @@ footer{
         width: 780px;
     }
     
-    #header-content{
+    .header-content{
         width: 780px;
     }
 }
@@ -144,7 +150,8 @@ footer{
         width: 1040px;
     }
     
-    #header-content{
+    .header-content{
         width: 1040px;
     }
+    
 }
