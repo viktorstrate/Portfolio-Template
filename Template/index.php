@@ -1,6 +1,6 @@
 <?php
 require_once("configuration.php");
-require_once(CockpitRoot.'/bootstrap.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +12,9 @@ require_once(CockpitRoot.'/bootstrap.php');
         <link href='stylesheet.css' rel='stylesheet' type='text/css' >
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="http://cmmedia.a.ssl.fastly.net/bca287819ca0ab6dfc26/25066709/16x16-c.png">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="assets/scripts/itemhandler.js"></script>
     </head>
     <body>
     
@@ -24,8 +27,8 @@ require_once(CockpitRoot.'/bootstrap.php');
             
             <nav>
                 <ul>
-                    <a href="index.php" class="current"><li>Work&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></a>
-                    <a href="about.php"><li>About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></a>
+                    <a href="index.php" class="current"><li>Work</li></a>
+                    <a href="about.php"><li>About</li></a>
                     <a href="contact.php"><li>Contact</li></a>
                 </ul>
             </nav>
@@ -34,57 +37,9 @@ require_once(CockpitRoot.'/bootstrap.php');
         </header>
         
         <div class="container">
-            <div class="content">
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Queasy App</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Bear Selfies</p>
-                </div>
-                <div class="imageitem>"
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Howling Wulfs</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Bouncing Circle Inc.</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Handyman Tools</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Dad Chair Outlet Mall</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Singing Gumball</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Finger Balloons</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Hearts Beating Merch</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Goldfish Food Store</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Wobbling Guy Studios</p>
-                </div>
-                <div class="imageitem">
-                    <img src="https://cmmedia.a.ssl.fastly.net/4c4764438f9ed9a4a5c9/25875982/382x213/crop:58-41_240x140.gif" />
-                    <p>Asteroid Fan Belts</p>
-                </div>
-                </div>
+            <div class="content" id="content">
             </div>
+        </div>
             
             <footer>
                 <div class="footerInfo">

@@ -21,6 +21,7 @@ li {
     list-style-type: none;
     display: inline-block;
     position: relative;
+    padding-right: 20px;
 }
 
 header nav {
@@ -46,10 +47,10 @@ a {
     width: 240px;
     height: 160px;
     background-color: #000;
-    background-size:cover;
     margin-top: 10px;
     border: 1px none;
     border-radius: 3px;
+    background-size:cover;
 }
 
 .imageitem p{
