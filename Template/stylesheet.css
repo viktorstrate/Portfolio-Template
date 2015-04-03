@@ -50,7 +50,9 @@ a {
     cursor: pointer;
 }
 
-
+textarea {
+    font-family: 'Open Sans', sans-serif;
+}
 
 .imageitem img{
     background-color: #000;
@@ -58,6 +60,12 @@ a {
     border: 1px none;
     border-radius: 3px;
     background-size:cover;
+}
+
+hr{
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin: 1em 0; padding: 0;
 }
 
 .imageitem p{
@@ -90,7 +98,6 @@ footer{
     display: block;
     width: 240px;
     height: 30px;
-    
 }
 
 .logo {
