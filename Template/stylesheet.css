@@ -56,6 +56,8 @@ textarea {
 
 .imageitem img{
     background-color: #000;
+    width: 240px;
+    height: 140px;
     margin-top: 10px;
     border: 1px none;
     border-radius: 3px;

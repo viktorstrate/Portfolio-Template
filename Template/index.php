@@ -17,11 +17,11 @@ require_once("configuration.php");
         <script src="assets/scripts/general.js"></script>
     </head>
     <body>
-        <?php require_once('header.php'); ?>
+        <?php require('header.php'); ?>
         <div class="container">
             <div class="content" id="content">
             </div>
         </div>
-        <?php require_once('footer.php'); ?>
+        <?php require('footer.php'); ?>
   </body>
 </html>
