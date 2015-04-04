@@ -12,6 +12,3 @@
 /storage/cache/thumbs/*.png
 /storage/cache/thumbs/*.gif
 /storage/cache/tmp/*
-/storage/data/*.sqlite
-/storage/uploads/*
-/custom/*

@@ -1,6 +1,7 @@
 loadCategories();
 
 function loadCategories(){
+    console.log("Was here");
     $.ajax('assets/scripts/getcategories.php').done(function (data){
         var html = '';
         console.log(data);
