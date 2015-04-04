@@ -14,7 +14,7 @@ function loadCategories(){
             for(var i = 0; i < data.length; i++){
                 html+=
                 '<div class="imageitem" onclick="setUrlHash(\'category='+data[i].categoryid+'\');">'+
-                '<img src="'+data[i].image+'" />'+
+                '<div class="imageitem_thumbnail" style="background: url(\''+data[i].image+'\');" />'+
                 '<p>'+data[i].name+'</p></div>'
             }
             return html;
@@ -34,7 +34,7 @@ function gotoItem(id){
                 
                 html += '<img class="imageBig" src="'+data.imagePath+'"></center>';
                 
-                html += markdown.toHTML(data.description);
+                html += marked(data.description);
                 
                 html += '</div>';
               $('#content').html(html);
@@ -56,10 +56,10 @@ function gotoCategory(id){
       success: function(data){
           $('#content').fadeOut(500, function(){
               var html = '';
-              for(var i = 0; i < data.length; i++){
+              for(var i = data.length-1; i >= 0; i--){
                 html+=
                 '<div class="imageitem" onclick="setUrlHash(\'item='+data[i].id+'\');">'+
-                '<img src="'+data[i].image+'" />'+
+                '<div class="imageitem_thumbnail" style="background: url(\''+data[i].image+'\');" />'+
                 '<p>'+data[i].name+'</p></div>'
               }
               $('#content').html(html);

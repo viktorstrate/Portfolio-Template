@@ -7,16 +7,16 @@ $categories = array();
 foreach(collection("Category")->find() as $category){
     $foundImage = false;
     $imagePath = '';
-    foreach(collection("Item")->find() as $item){
-        if($item['Category']==$category['_id']){
+    $item = array();
+    foreach(collection("Item")->find() as $itm){
+        if($itm['Category']==$category['_id']){
             $foundImage = true;
-            $imagePath = substr($item['Image'], 5);
-            break;
+            $item = $itm;
         }
     }
     if($foundImage==false){
         $imagePath = 'assets/img/noitemsfound.jpg';
-    }
+    } else $imagePath = substr($item['Image'], 5);
     array_push($categories, array('categoryid'=>$category['_id'], 'name'=>$category['Name'], 'image'=>$imagePath));
 }
 

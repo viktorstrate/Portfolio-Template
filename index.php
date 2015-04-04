@@ -9,7 +9,7 @@ require_once("configuration.php");
         <script src="assets/scripts/itemhandler.js"></script>
         <script src="libs/jquery.ba-hashchange.min.js"></script>
         <script src="assets/scripts/general.js"></script>
-        <script src="libs/markdown.min.js"></script>
+        <script src="libs/marked.min.js"></script>
         <title><?php region('Name') ?></title>
         
     </head>

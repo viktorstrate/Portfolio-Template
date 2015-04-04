@@ -9,6 +9,10 @@ body {
     color: #333;
 }
 
+a{
+    text-decoration: none;
+}
+
 input, select, textarea, button{font-family:inherit;}
 
 header {
@@ -50,11 +54,18 @@ a {
     margin-top: -20px;
     font-size: 18px;
     float: left;
+    padding-top: 10px;
+    width: 40%;
+    padding-left: 10%;
+    float: left;
 }
 
 .imageitem {
     transition: 0.1s;
     float: left;
+    width: 240px;
+    height: 140px;
+    margin-top: 60px !important;
 }
 
 .imageitem:hover {
@@ -67,15 +78,15 @@ textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
-.imageitem img{
+.imageitem_thumbnail{
     background-color: #000;
     width: 240px;
-    height: 140px;
-    margin-top: 10px;
+    height: 160px;
     border: 1px none;
     border-radius: 3px;
-    background-size:cover;
-    background-position: center center;
+    background-size:cover !important;
+    background-position: center center !important;
+    
 }
 
 hr{
@@ -116,12 +127,6 @@ footer{
     height: 30px;
 }
 
-.logo {
-    padding-top: 10px;
-    width: 50%;
-    float: left;
-}
-
 .header-content nav{
     width: 50%;
     float: left;
@@ -138,10 +143,15 @@ footer{
 }
 
 .footerCopyright {
-    float: right;
+    float: left;
 }
 
 @media only screen and (min-width: 530px) {
+    
+    .footerCopyright {
+        float: right;
+    }
+    
     .imageitem {
         margin: 10px;
     }
@@ -165,6 +175,8 @@ footer{
     
     .logo{
         margin-top: 0px;
+        width: 50%;
+        padding-left: 0;
     }
     
     .imageBig{

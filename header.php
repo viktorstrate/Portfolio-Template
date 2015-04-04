@@ -2,7 +2,7 @@
 
 <header>
 <div class="header-content">
-        <h1 class="logo"><?php region('Name') ?></h1>
+        <h1 class="logo"><a href="index.php"><?php region('Name') ?></a></h1>
         
         <nav>
             <ul>
