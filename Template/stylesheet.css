@@ -17,11 +17,17 @@ header {
     margin-top: 10px;
 }
 
-li {
+nav li {
+    transition: 0.2s;
     list-style-type: none;
     display: inline-block;
     position: relative;
     padding-right: 20px;
+}
+
+nav li:hover{
+    transition: 0.2s;
+    color: #999;
 }
 
 header nav {

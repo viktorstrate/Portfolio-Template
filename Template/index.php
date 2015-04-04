@@ -14,6 +14,7 @@ require_once("configuration.php");
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="assets/scripts/itemhandler.js"></script>
+        <script src="libs/jquery.ba-hashchange.min.js"></script>
         <script src="assets/scripts/general.js"></script>
     </head>
     <body>

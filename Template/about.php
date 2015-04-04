@@ -5,7 +5,7 @@ require_once("configuration.php");
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-        <title><?php region('Name') ?> - Contact</title>
+        <title><?php region('Name') ?> - About</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='stylesheet.css' rel='stylesheet' type='text/css' >
         <meta name="viewport" content="width=device-width, initial-scale=1">
