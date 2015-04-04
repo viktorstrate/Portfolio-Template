@@ -1,0 +1,39 @@
+input, textarea{
+    transition: box-shadow 0.2s;
+    width: 100%;
+    font-size: 15px;
+    border: solid #eee 1px;
+    padding: 3px;
+    border-bottom: medium solid #eee;
+    border-radius: 2px;
+}
+
+input:focus, textarea:focus{
+    transition: box-shadow 0.2s;
+    box-shadow: 0px 0px 3px #2281c3;
+}
+
+textarea{
+    min-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #369ec9;
+    border: solid #307896 1px;
+    border-bottom: medium solid #307896;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+button:active{
+    background-color: #307896;
+}
+
+button:hover{
+    transition: background-color 0.2s;
+    background-color: #1fa1d7;
+}
