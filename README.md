@@ -1,5 +1,5 @@
 # Portfolio-Template
-A portfolio template build on the Cockpit CMS
+A portfolio template build on the Cockpit CMS, you can find a live demo here http://portfolio.qpqp.dk
 
 # Screenshot
 ![Homepage](https://cloud.githubusercontent.com/assets/4233458/6994485/02a34488-db1c-11e4-9338-edd8c867c2d5.jpg)
