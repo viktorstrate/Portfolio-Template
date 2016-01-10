@@ -14,15 +14,18 @@ a{
 
 input, select, textarea, button{font-family:inherit;}
 
-header {
+header, #footer {
     background: transparent;
     max-width:1040px;
     margin:10px auto;
     padding:0 20px;
     box-sizing: border-box;
 }
-
-header, nav{
+footer{
+	clear:both;
+	padding-top:100px;
+}
+header, nav, #footer{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox; 
@@ -40,6 +43,12 @@ header, nav{
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
      -moz-flex-wrap: wrap;
+}
+#footer{
+	-webkit-justify-content:space-between;
+     -moz-justify-content: 	space-between;
+      -ms-justify-content: 	space-between;
+          justify-content: 	space-between;
 }
 nav{
     margin: 0 0 0 auto;
@@ -96,7 +105,7 @@ a {
     margin:10px auto 10px 0;
 }
 @media screen and (max-width: 540px){
-    header{
+    header, #footer{
         -ms-flex-direction:column;
         -webkit-flex-direction:column;
          flex-direction:column;
@@ -134,14 +143,14 @@ textarea {
     border: 1px none;
     border-radius: 3px;
     background-size:cover !important;
-    background-position: center center !important;
-    
+    background-position: center center !important;    
 }
 
 hr{
     display: block; height: 1px;
     border: 0; border-top: 1px solid rgba(0, 0, 0, 0.05);
     margin: 1em 0; padding: 0;
+	clear:both;
 }
 
 .imageitem p{
@@ -159,37 +168,7 @@ hr{
     width: 100%;
 }
 
-footer{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    float: left;
-    width: 100%;
-    margin-top: 100px;
-}
-
-#footer{
-    margin: 0 auto;
-    display: block;
-    width: 240px;
-    height: 30px;
-}
-
-
-
-.footerInfo {
-    float: left;
-}
-
-.footerCopyright {
-    float: left;
-}
-
 @media only screen and (min-width: 530px) {
-    
-    .footerCopyright {
-        float: right;
-    }
     
     .imageitem {
         margin: 10px;
@@ -199,25 +178,13 @@ footer{
         width: 520px;
     }
     
-    #footer{
-        width: 520px;
-    }
-    
     .header-content{
         width: 520px;
     }
-    
-    .header-content nav{
-        margin-top: 0px;
-        text-align: right;
-    }
-    
-    
-    
+ 
     .imageBig{
         width: 520px;
-    }
-    
+    }    
 }
 
 @media only screen and (min-width: 790px) {
@@ -227,13 +194,7 @@ footer{
     
     .content{
         width: 780px;
-    }
-    
-    #footer{
-        width: 780px;
-    }
-    
- 
+    }  
     
     .imageBig{
         width: 780px;
@@ -248,12 +209,7 @@ footer{
     .content{
         width: 1040px;
     }
-    
-    #footer{
-        width: 1040px;
-    }
-    
-    
+        
     .imageBig{
         width: 1040px;
     }

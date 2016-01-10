@@ -1,4 +1,5 @@
 <footer>
+<hr>
 <div id="footer">
     <div class="footerInfo">
         <?php region('Footer information') ?>
