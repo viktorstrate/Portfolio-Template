@@ -17,6 +17,8 @@ require_once("configuration.php");
         <?php require('header.php'); ?>
         <div class="container">
             <div class="content" id="content">
+			
+			
             </div>
         </div>
         <?php require('footer.php'); ?>
